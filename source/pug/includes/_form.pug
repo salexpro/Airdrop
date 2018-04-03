@@ -1,0 +1,8 @@
+mixin form(mod)
+    form.form(class=mod ? 'form--' + mod : '' action=mod==='join'?"send":"join")
+        input(type=mod==='join'?"text":"email" placeholder=mod==='join'?"Enter you ETH wallet*":"Email" required)
+        button.button
+            if mod==='join'
+                | Send
+            else
+                | Join

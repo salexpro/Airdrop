@@ -1,5 +1,6 @@
 html, body{
-    -webkit-overflow-scrolling: touch
+    -webkit-overflow-scrolling: touch;
+    letter-spacing: 0.9px;
 }
 
 .wrap {
@@ -24,4 +25,17 @@ html, body{
 textarea,
 select {
     outline: none;
+}
+
+a{
+    transition: 300ms
+}
+
+h1{
+    letter-spacing: 3px;
+    line-height: 1.5;
+}
+
+h2{
+    letter-spacing: 3px;
 }

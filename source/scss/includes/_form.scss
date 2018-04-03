@@ -1,0 +1,23 @@
+.form{
+    max-width: 400px;
+    display: flex;
+    &--head{
+        margin-top: 55px;
+    }
+    &--join{
+        margin-top: 50px;
+        input{
+            border-color: $primary-color;
+            color: $primary-color;
+            &::placeholder{
+                color: $primary-color;
+            }
+        }
+        .button{
+            background-color: $primary-color;
+        }
+    }
+    .button{
+        margin-left: 30px;
+    }
+}

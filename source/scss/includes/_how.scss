@@ -1,0 +1,33 @@
+.how{
+    &_inner{
+        background-color: $white;
+        padding-top: 58px;
+        padding-bottom: 110px;
+        text-align: center;
+    }
+    &_steps{
+        margin-top: 72px;
+        counter-reset: steps;
+    }
+    &_step{
+        counter-increment: steps;
+        &_img{
+            height: 136px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        &_descr{
+            &::before{
+                content: '0' counter(steps);
+                display: block;
+                font-size: 16px;
+                font-weight: 500;
+                letter-spacing: 1.2px;
+                line-height: 1;
+                margin-top: 50px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}

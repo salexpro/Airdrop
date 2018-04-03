@@ -1,4 +1,7 @@
 block vars
+//- Components
+include includes/_form
+
 doctype html
 html(lang="ru")
     include includes/_head
@@ -6,5 +9,10 @@ html(lang="ru")
         main.off-canvas-content.wrap(data-off-canvas-content)
             include includes/_header
             block content
+                include includes/_promo
+                include includes/_how
+                include includes/_customers
+                include includes/_media
             include includes/_footer
         include includes/_offcanvas
+        script(src="./js/app.min.js")

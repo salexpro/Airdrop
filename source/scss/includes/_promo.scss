@@ -1,0 +1,42 @@
+.promo{
+    background-image: url(../img/promo.jpg), 
+                      linear-gradient(to bottom, #03104f 0%, #041050 21%, #061453 85%, #03104f 106%);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: $white;
+    margin-bottom: 56px;
+    &_inner{
+        position: relative;
+        height: 100vh;
+        padding-bottom: 5%;
+    }
+}
+
+.scroll{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: rgba($primary-color, .2);
+    background-image: url(../img/scroll.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    left: 15px;
+    bottom: 54px;
+    outline: none;
+    color: $white;
+    cursor: pointer;
+    transition: 300ms;
+    &:hover{
+        background-color: rgba($primary-color, .4);
+    }
+    &::before{
+        content: 'Scroll';
+        position: absolute;
+        transform: rotate(-90deg);
+        opacity: 0.2;
+        left: 6px;
+        bottom: calc(100% + 24px);
+    }
+}

@@ -1,0 +1,35 @@
+.footer{
+    color: $white;
+    padding: 100px 0;
+    &_header{
+        margin-bottom: 38px;
+    }
+    &_contacts{
+        p{
+            margin-top: 30px;
+        }
+    }
+    &_copyright{
+        padding-top: 80px;
+    }
+}
+
+.social{
+    &_item{
+        +li{
+            margin-left: 12px;
+        }
+        a{  
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: rgba($primary-color, .4);
+            border-radius: 50%;
+            &:hover, &:focus{
+                background-color: $primary-color;
+            }
+        }
+    }
+}

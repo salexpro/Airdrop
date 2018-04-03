@@ -2,11 +2,11 @@
 
 @import 'settings';
 @import '../../node_modules/foundation-sites/scss/foundation';
-// @import 'motion-ui';
+@import '../../node_modules/motion-ui/dist/motion-ui.min';
 
 @include foundation-global-styles;
 //@include foundation-grid;
-// @include foundation-flex-grid;
+@include foundation-flex-grid;
 // @include foundation-xy-grid-classes;
 @include foundation-typography;
 @include foundation-button;
@@ -19,8 +19,8 @@
 // @include foundation-button-group;
 // @include foundation-callout;
 // @include foundation-card;
-// @include foundation-close-button;
-// @include foundation-menu;
+@include foundation-close-button;
+@include foundation-menu;
 // @include foundation-menu-icon;
 // @include foundation-drilldown-menu;
 // @include foundation-dropdown;
@@ -37,7 +37,6 @@
 // @include foundation-meter-element;
 // @include foundation-slider;
 // @include foundation-sticky;
-// @include foundation-reveal;
 // @include foundation-switch;
 // @include foundation-table;
 // @include foundation-tabs;
@@ -47,11 +46,22 @@
 // @include foundation-top-bar;
 // @include foundation-visibility-classes;
 // @include foundation-float-classes;
-// @include foundation-flex-classes;
+@include foundation-flex-classes;
 
 // @include foundation-prototype-classes;
 
 // @include motion-ui-transitions;
 // @include motion-ui-animations;
 
-@import 'includes/_layout';
+// Components
+@import 'includes/layout';
+@import 'includes/button';
+@import 'includes/form';
+
+// Sections
+@import 'includes/head';
+@import 'includes/promo';
+@import 'includes/how';
+@import 'includes/customers';
+@import 'includes/media';
+@import 'includes/footer';
