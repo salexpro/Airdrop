@@ -1,0 +1,96 @@
+.reveal {
+    outline: none;
+    margin-right: 0;
+    height: 100%;
+    &_inner{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &_content{
+        padding: 55px 94px;    
+    }
+    &_header{
+        line-height: 1.2;
+    }
+    &_descr{
+        font-size: 14px;
+        font-weight: 300;
+    }
+    &_footer{
+        height: 150px;
+        padding: 0 94px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        background-color: $light-gray;
+        font-size: 14px;
+        letter-spacing: 1.4px;
+        
+    }
+    &_note{
+        font-size: 12px;
+        letter-spacing: 0.6px;
+        margin-bottom: 30px;
+    }
+
+    &_join{
+        &_steps{
+            margin: 0;
+            list-style: none;
+            display: flex;
+            overflow: hidden;
+            counter-reset: join;
+            margin-bottom: 90px;
+        }
+        &_step{
+            position: relative;
+            width: 45px;
+            height: 45px;
+            border: 2px solid $primary-color;
+            border-radius: 50%;
+            counter-increment: join;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $primary-color;
+            &.is_active{
+                background-color: $primary-color;
+                color: $white;
+            }
+            &::before {
+                content: '0' counter(join);
+                font-weight: 500;
+            }
+            +li{
+                margin-left: 80px;
+                &::after{
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    right: calc(100% + 20px);
+                    width: 44px;
+                    border-top: 2px solid $primary-color;
+                }
+            }
+        }
+    }
+}
+
+.close-button {
+    transition: 300ms;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+    span {
+        line-height: 0.3;
+        display: block;
+        overflow: hidden;
+        padding-bottom: 30%;
+        font-weight: 300;
+    }
+    &.small {
+        color: $white;
+    }
+}

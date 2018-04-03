@@ -1,0 +1,23 @@
+#join.reveal.reveal_join(data-reveal data-v-offset="0" data-animation-in="fade-in" data-animation-out="fade-out")
+    .reveal_inner
+        .reveal_content
+            ul.reveal_join_steps
+                li.reveal_join_step.is_active
+                li.reveal_join_step
+            h2.reveal_header
+                | Thank you for
+                br
+                | your email
+            p.reveal_descr
+                | To finish your registrations and get tokens,
+                br
+                | Save your token-compatible Ethereum address
+                br
+                | for future airdrops.
+            +form('join')
+        .reveal_footer
+            .reveal_note
+                | *ERC20 compatible wallets
+            | Myetherwallet, Metamask, Mist, Parity
+    button.close-button(aria-label='Close', type='button', data-close)
+        span(aria-hidden='true') ×

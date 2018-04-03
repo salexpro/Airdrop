@@ -5,7 +5,9 @@
 @codekit-prepend '../../node_modules/foundation-sites/dist/js/plugins/foundation.util.box.min';
 @codekit-prepend '../../node_modules/foundation-sites/dist/js/plugins/foundation.util.triggers.min';
 @codekit-prepend '../../node_modules/foundation-sites/dist/js/plugins/foundation.util.keyboard.min';
+@codekit-prepend '../../node_modules/foundation-sites/dist/js/plugins/foundation.util.motion.min';
 @codekit-prepend '../../node_modules/foundation-sites/dist/js/plugins/foundation.smoothScroll.min';
+@codekit-prepend '../../node_modules/foundation-sites/dist/js/plugins/foundation.reveal.min';
 */
 
 $(document).foundation();

@@ -38,12 +38,6 @@
 		"oAP": "\/build\/.gitignore",
 		"oF": 1
 		},
-	"\/build": {
-		"ft": 65536,
-		"oA": 1,
-		"oAP": "\/build\/build",
-		"oF": 0
-		},
 	"\/build.zip": {
 		"cB": 0,
 		"ft": 8192,
@@ -62722,7 +62716,7 @@
 		"oAP": "\/build\/img\/customers\/abyss.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -62733,7 +62727,7 @@
 		"oAP": "\/build\/img\/customers\/auto.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -62744,7 +62738,7 @@
 		"oAP": "\/build\/img\/how\/1.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/source\/img\/how\/2.jpg": {
@@ -62754,7 +62748,7 @@
 		"oAP": "\/build\/img\/how\/2.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/source\/img\/how\/3.jpg": {
@@ -62764,7 +62758,7 @@
 		"oAP": "\/build\/img\/how\/3.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/source\/img\/logo.svg": {
@@ -62784,7 +62778,7 @@
 		"oAP": "\/build\/img\/media\/1.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/source\/img\/media\/2.jpg": {
@@ -62794,7 +62788,7 @@
 		"oAP": "\/build\/img\/media\/2.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/source\/img\/media\/3.jpg": {
@@ -62804,7 +62798,7 @@
 		"oAP": "\/build\/img\/media\/3.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/source\/img\/media\/4.jpg": {
@@ -62814,7 +62808,7 @@
 		"oAP": "\/build\/img\/media\/4.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/source\/img\/promo.jpg": {
@@ -62845,7 +62839,7 @@
 		"oAP": "\/build\/img\/social\/fb.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -62856,7 +62850,7 @@
 		"oAP": "\/build\/img\/social\/in.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -62867,7 +62861,7 @@
 		"oAP": "\/build\/img\/social\/md.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -62878,7 +62872,7 @@
 		"oAP": "\/build\/img\/social\/tw.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -63166,7 +63160,7 @@
 	"displayValue": "Airdrop",
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "meme-doge",
-	"lastBuiltDate": 544444164
+	"lastBuiltDate": 544489609
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
