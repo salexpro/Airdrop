@@ -1,3 +1,13 @@
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $primary-color;
+    border-radius: $global-radius;
+}
+
 html, body{
     -webkit-overflow-scrolling: touch;
     letter-spacing: 0.9px;
