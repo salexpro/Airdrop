@@ -6,10 +6,42 @@
     background-size: contain;
     color: $white;
     margin-bottom: 56px;
+    padding: 0 30px;
+    @include breakpoint(xlarge down){
+        background-size: cover;
+        background-position: top center;
+    }
+    @include breakpoint(large down) {
+        margin-bottom: 50px;
+    }
+    @include breakpoint(medium down) {
+        margin-bottom: 80px;
+        background-size: auto;
+        background-position: bottom center;
+        background-image: url(../img/promo.jpg), 
+                          linear-gradient(to right, #03104f 0%, #041050 21%, #061453 85%, #03104f 106%);
+    }
+    @include breakpoint(small down) {
+        margin: 0;
+    }
+    @media screen and #{breakpoint(small down)} and (orientation: portrait) {
+        background-size: 230%;
+        background-position: top -40px right 19%;
+    }
     &_inner{
         position: relative;
         height: 100vh;
         padding-bottom: 5%;
+        @include breakpoint(medium down) {
+            padding-top: 70px;
+        }
+        @include breakpoint(small down) {
+            align-items: flex-end;
+        }
+        @media screen and #{breakpoint(small down)} and (orientation: portrait){
+            padding: 40% 0 0;
+            align-items: center;
+        }
     }
 }
 
@@ -28,6 +60,18 @@
     color: $white;
     cursor: pointer;
     transition: 300ms;
+    @include breakpoint(medium down) {
+        bottom: 30px;
+    }
+    @media screen and #{breakpoint(medium down)} and (orientation: landscape) {
+        display: none;
+    }
+    @include breakpoint(small down) {
+        width: 40px;
+        height: 40px;
+        left: 10px;
+        background-size: 10px;
+    }
     &:hover{
         background-color: rgba($primary-color, .4);
     }
@@ -38,5 +82,8 @@
         opacity: 0.2;
         left: 6px;
         bottom: calc(100% + 24px);
+        @include breakpoint(small down) {
+            display: none;
+        }
     }
 }

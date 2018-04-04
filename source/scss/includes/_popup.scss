@@ -1,7 +1,15 @@
 .reveal {
     outline: none;
-    margin-right: 0;
     height: 100%;
+    @include breakpoint(medium down) {
+        min-width: 530px;
+    }
+    @include breakpoint(small down) {
+        min-width: 100%;
+    }
+    &.small{
+        margin-right: 0;
+    }
     &_inner{
         height: 100%;
         display: flex;
@@ -9,7 +17,13 @@
         justify-content: space-between;
     }
     &_content{
-        padding: 55px 94px;    
+        padding: 55px 94px;
+        @include breakpoint(large down) {
+            padding: 55px 65px;
+        }
+        @include breakpoint(small down) {
+            padding: 30px 40px;
+        }
     }
     &_header{
         line-height: 1.2;
@@ -17,9 +31,15 @@
     &_descr{
         font-size: 14px;
         font-weight: 300;
+        @include breakpoint(small down) {
+            font-size: 12px;
+            br{
+                display: none;
+            }
+        }
     }
     &_footer{
-        height: 150px;
+        min-height: 150px;
         padding: 0 94px;
         display: flex;
         flex-direction: column;
@@ -28,12 +48,23 @@
         background-color: $light-gray;
         font-size: 14px;
         letter-spacing: 1.4px;
-        
+        @include breakpoint(large down) {
+            padding: 0 65px;
+        }
+        @include breakpoint(small down) {
+            padding: 0 40px;
+            font-size: 12px;
+            min-height: 90px;
+            letter-spacing: 1px;
+        }
     }
     &_note{
         font-size: 12px;
         letter-spacing: 0.6px;
         margin-bottom: 30px;
+        @include breakpoint(small down) {
+            margin-bottom: 10px;
+        }
     }
 
     &_join{
@@ -44,6 +75,9 @@
             overflow: hidden;
             counter-reset: join;
             margin-bottom: 90px;
+            @include breakpoint(small down) {
+                margin-bottom: 60px;
+            }
         }
         &_step{
             position: relative;
@@ -66,6 +100,9 @@
             }
             +li{
                 margin-left: 80px;
+                @include breakpoint(small down) {
+                    margin-left: 30px;
+                }
                 &::after{
                     content: '';
                     position: absolute;
@@ -73,6 +110,10 @@
                     right: calc(100% + 20px);
                     width: 44px;
                     border-top: 2px solid $primary-color;
+                    @include breakpoint(small down) {
+                        width: 22px;
+                        right: calc(100% + 6px);
+                    }
                 }
             }
         }
@@ -83,14 +124,17 @@
     transition: 300ms;
     -webkit-tap-highlight-color: transparent;
     outline: none;
+    @include breakpoint(small down) {
+        &:not(.small){
+            top: 46px;
+            right: 40px;
+        }
+    }
     span {
         line-height: 0.3;
         display: block;
         overflow: hidden;
         padding-bottom: 30%;
         font-weight: 300;
-    }
-    &.small {
-        color: $white;
     }
 }

@@ -10,6 +10,10 @@
         }
         img{
             margin: 0 21px;
+            @include breakpoint(small down) {
+                margin: 0 15px;
+                height: 20px; 
+            }
         }
     }
     &_overlay{

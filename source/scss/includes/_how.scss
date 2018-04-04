@@ -1,23 +1,47 @@
 .how{
+    padding: 0 30px;
+    @include breakpoint(small down) {
+        padding: 0;
+    }
     &_inner{
         background-color: $white;
         padding-top: 58px;
         padding-bottom: 110px;
         text-align: center;
+        @include breakpoint(large down) {
+            padding-top: 90px;
+        }
+        @include breakpoint(small down) {
+            margin: 0 -10px;
+            padding: 60px 20px 45px;
+        }
     }
     &_steps{
         margin-top: 72px;
         counter-reset: steps;
+        @include breakpoint(small down) {
+            margin-top: 25px;
+        }
     }
     &_step{
         counter-increment: steps;
+        @include breakpoint(small down) {
+            margin-bottom: 45px;
+        }
         &_img{
             height: 136px;
             display: flex;
             align-items: center;
             justify-content: center;
+            @include breakpoint(large down) {
+                height: 110px;
+            }
+            img{
+                max-height: 100%;
+            }
         }
         &_descr{
+            padding: 0 10%;
             &::before{
                 content: '0' counter(steps);
                 display: block;
@@ -27,6 +51,13 @@
                 line-height: 1;
                 margin-top: 50px;
                 margin-bottom: 30px;
+                @include breakpoint(large down) {
+                    margin-top: 40px;
+                    margin-bottom: 20px;
+                }
+                @include breakpoint(small down) {
+                    margin-top: 35px;
+                }
             }
         }
     }

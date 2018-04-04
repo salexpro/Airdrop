@@ -1,11 +1,20 @@
 .form{
     max-width: 400px;
     display: flex;
+    @include breakpoint(small down) {
+        flex-direction: column;
+    }
     &--head{
         margin-top: 55px;
+        @include breakpoint(small down) {
+            margin: 0;
+        }
     }
     &--join{
         margin-top: 50px;
+        @include breakpoint(small down) {
+            margin-top: 40px;
+        }
         input{
             border-color: $primary-color;
             color: $primary-color;
@@ -19,5 +28,9 @@
     }
     .button{
         margin-left: 30px;
+        @include breakpoint(small down) {
+            margin: 20px 0 0;
+            background-color: $primary-color;
+        }
     }
 }

@@ -1,16 +1,11 @@
-header.row.align-middle.head
-    .column.shrink.logo
-        img(src="./img/logo.svg", alt="Airdrop")
-    nav.column.shrink.head_nav
-        ul.menu.simple(data-smooth-scroll)
-            li
-                a(href="#promo") Start
-            li
-                a(href="#how") How It Works
-            li
-                a(href="#customers") Partner
-            li
-                a(href="#media") News
-    .column.shrink
-        button.button(data-open="join")
-            | Join
+header.head
+    .row.align-middle.align-justify
+        .column.shrink.logo
+            img(src="./img/logo.svg", alt="Airdrop")
+        nav.column.shrink.head_nav.show-for-medium
+            +menu('simple')
+        .column.shrink
+            button.button.show-for-medium(data-open="join")
+                | Join
+            button.button.head_hamb.hide-for-medium(data-open="menu")
+                .head_hamb_bars

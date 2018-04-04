@@ -34,6 +34,9 @@ a{
 h1{
     letter-spacing: 3px;
     line-height: 1.5;
+    @include breakpoint(small down) {
+        letter-spacing: 1.7px;
+    }
 }
 
 h2{

@@ -1,10 +1,31 @@
 .head{
-    padding-top: 30px;
+    padding: 30px 30px 0;
     margin-bottom: -70px;
     position: relative;
     z-index: 1;
     &_nav{
         margin-left: auto;
         margin-right: 44px;
+        @include breakpoint(medium down) {
+            margin-right: 5%;
+        }
+    }
+    &_hamb{
+        padding: 0;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 0;
+        background: $primary-color;
+        &_bars{
+            @include hamburger($white, $white, 15px, 10px, 1px, 3);
+        }
+    }
+    &_mobile{
+        padding: 24px 50px 0 15px;
+        font-weight: 500;
+        a{
+            color: $primary-color;
+        }
     }
 }
