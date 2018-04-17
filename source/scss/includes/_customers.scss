@@ -3,11 +3,6 @@
     &_content{
         padding: 117px 0;
         text-align: center;
-        &:hover{
-            + .customers_overlay{
-                opacity: 1;
-            }
-        }
         img{
             margin: 0 21px;
             @include breakpoint(small down) {
@@ -26,7 +21,7 @@
         align-items: center;
         justify-content: center;
         opacity: 0;
-        background-color: rgba($body-background, .72);
+        background: linear-gradient(to left, rgba(#671ac1, .72) 0%, rgba(#310e89, .72) 100%);
         transition: 500ms;
         &:hover{
             opacity: 1;

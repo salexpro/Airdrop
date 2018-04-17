@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <title>Airdrop</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;amp;subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="./css/app.css?ckcachebust=dc7515b33abe6815310f9d0b3c5281d9">
+    <meta name="theme-color" content="#03104f">
+    <link rel="stylesheet" href="./css/app.css?ckcachebust=f63faa3263dec5212efdac01b61c0dd3">
+    <script defer="" src="https://use.fontawesome.com/releases/v5.0.10/js/brands.js?ckcachebust=545697656" integrity="sha384-6jhVhr5a+Z1nLr9h+fd7ocMEo847wnGFelCHddaOOACUeZNoQwFXTxh4ysXVam8u" crossorigin="anonymous"></script>
+    <script defer="" src="https://use.fontawesome.com/releases/v5.0.10/js/fontawesome.js?ckcachebust=545697656" integrity="sha384-M2FSA4xMm1G9m4CNXM49UcDHeWcDZNucAlz1WVHxohug0Uw1K+IpUhp/Wjg0y6qG" crossorigin="anonymous"></script>
   </head>
   <body>
     <main class="off-canvas-content wrap" data-off-canvas-content>
@@ -14,14 +16,13 @@
           <div class="column shrink logo"><img src="./img/logo.svg" alt="Airdrop"></div>
           <nav class="column shrink head_nav show-for-medium">
             <ul class="menu simple" data-smooth-scroll="data-smooth-scroll">
-              <li><a href="#promo">Start</a></li>
+              <li class="active"><a href="#promo">Start</a></li>
               <li><a href="#how">How It Works</a></li>
-              <li><a href="#customers">Partner</a></li>
+              <li><a href="#customers">Airdrops</a></li>
               <li><a href="#media">News</a></li>
             </ul>
           </nav>
-          <div class="column shrink">
-            <button class="button show-for-medium" data-open="join">Join</button>
+          <div class="column shrink"><a class="show-for-medium" data-open="step1">Join</a>
             <button class="button head_hamb hide-for-medium" data-open="menu">
               <div class="head_hamb_bars"></div>
             </button>
@@ -31,7 +32,20 @@
       <section class="promo" id="promo">
         <div class="row align-middle promo_inner">
           <div class="column large-offset-1">
-            <h1>Get Exclusive Airdrops<br>from Top ICO projects</h1>
+            <h1>
+              Get Exclusive Airdrops
+               <br> 
+              from Top ICO
+               <br> 
+              projects
+            </h1>
+            <p class="promo_descr">
+              TokenBoom is private club of ICO investors.
+               <br> 
+              Leave us your details and get tokens from TOP ICO project for free.
+               <br> 
+              Just keep more then 1 ETH on your wallet.
+            </p>
             <form class="form form--head" action="join">
               <input type="email" placeholder="Email" required="required"/>
               <button class="button">Join
@@ -44,24 +58,22 @@
         <div class="row column">
           <div class="how_inner">
             <h2>How it Works</h2>
-            <p class="how_descr">Stripe is the best software platform for running an internet business.<br>We handle billions of dollars every year for forward-thinking<br>businesses around the world.</p>
+            <p class="how_descr">We give you tokens of young promising ICO’s just for free. <br>Just leave us your email and ERC-20 compatible wallet with more then 1ETH on the balance.</p>
             <div class="row how_steps">
               <div class="column medium-4 small-12 how_step">
-                <div class="how_step_img"><img src="./img/how/1.jpg" alt="01"></div>
+                <div class="how_step_img"><img src="./img/how/1.svg" alt="01"></div>
                 <p class="how_step_descr">
-                   Sign up on the website and insert your ERC-20 compatible ETH wallet address. %link Check compatible wallets </p>
-              </div>
-              <div class="column medium-4 small-12 how_step">
-                <div class="how_step_img"><img src="./img/how/2.jpg" alt="02"></div>
-                <p class="how_step_descr">We negotiate with TOP ICO projects and ask them to send portion of their tokens to our community for FREE</p>
-              </div>
-              <div class="column medium-4 small-12 how_step">
-                <div class="how_step_img"><img src="./img/how/3.jpg" alt="03"></div>
-                <p class="how_step_descr">
-                  Keep more then 1 ETH on your ETH wallet and get
-                   <b>FREE</b> 
-                  tokens during super exclusive airdrops from TOP ICO projects.
+                   Give us your email and ERC-20 compatible wallet.
+                   <a href="#">Here is the list</a>
                 </p>
+              </div>
+              <div class="column medium-4 small-12 how_step">
+                <div class="how_step_img"><img src="./img/how/2.svg" alt="02"></div>
+                <p class="how_step_descr">No need to complete any silly tasks (follow Telegram groups, Facebook likes, twitter reposts).</p>
+              </div>
+              <div class="column medium-4 small-12 how_step">
+                <div class="how_step_img"><img src="./img/how/3.svg" alt="03"></div>
+                <p class="how_step_descr">We choose best ICO using ICO Rating,we will notify you via Email. Just keep more then 1 ETH on your wallet to get tokens. </p>
               </div>
             </div>
           </div>
@@ -76,7 +88,6 @@
       <section class="media" id="media">
         <div class="row column media_inner">
           <h2>What Media Say</h2>
-          <p class="media_descr">Stripe is the best software platform for running an internet business.<br>We handle billions of dollars every year for forward-thinking<br>businesses around the world.</p>
         </div>
         <div class="row media_items">
           <div class="column large-3 medium-6 small-12 media_item">
@@ -136,20 +147,38 @@
       <ul class="menu vertical" data-smooth-scroll="data-smooth-scroll">
         <li><a href="#promo">Start</a></li>
         <li><a href="#how">How It Works</a></li>
-        <li><a href="#customers">Partner</a></li>
+        <li><a href="#customers">Airdrops</a></li>
         <li><a href="#media">News</a></li>
       </ul>
       <button class="close-button small" aria-label="Close" type="button" data-close><span aria-hidden="true">×</span></button>
     </div>
-    <div class="reveal small reveal_join" id="join" data-reveal data-v-offset="0" data-animation-in="fade-in" data-animation-out="fade-out">
+    <div class="reveal small reveal_join" id="step1" data-reveal data-close-on-click="false" data-v-offset="0" data-animation-in="fade-in" data-animation-out="fade-out">
       <div class="reveal_inner">
         <div class="reveal_content">
           <ul class="reveal_join_steps">
             <li class="reveal_join_step is_active"></li>
             <li class="reveal_join_step"></li>
           </ul>
-          <h2 class="reveal_header">Thank you for<br>your email</h2>
-          <p class="reveal_descr">To finish your registrations and get tokens,<br>Save your token-compatible Ethereum address<br>for future airdrops.</p>
+          <h2 class="reveal_header">Registration</h2>
+          <p class="reveal_descr">Leave your email to get tokens</p>
+          <form class="form" action="join">
+            <input type="email" placeholder="Email" required="required"/>
+            <button class="button">Join
+            </button>
+          </form>
+        </div>
+      </div>
+      <button class="close-button" aria-label="Close" type="button" data-close><span aria-hidden="true">×</span></button>
+    </div>
+    <div class="reveal small reveal_join" id="step2" data-reveal data-close-on-click="false" data-v-offset="0" data-animation-in="fade-in" data-animation-out="fade-out">
+      <div class="reveal_inner">
+        <div class="reveal_content">
+          <ul class="reveal_join_steps">
+            <li class="reveal_join_step"></li>
+            <li class="reveal_join_step is_active"></li>
+          </ul>
+          <h2 class="reveal_header">Finish your<br>registration</h2>
+          <p class="reveal_descr">Save your token-compatible Ethereum<br>address for future airdrops.</p>
           <form class="form form--join" action="send">
             <input type="text" placeholder="Enter you ETH wallet*" required="required"/>
             <button class="button">Send
@@ -157,11 +186,32 @@
           </form>
         </div>
         <div class="reveal_footer">
-          <div class="reveal_note">*ERC20 compatible wallets</div>Myetherwallet, Metamask, Mist, Parity
+          <div class="reveal_note">*ERC20 compatible wallets</div>MyEtherWallet (Desktop OR Mobile) RECOMMENDED, MetaMask (Firefox/Chrome Extension) RECOMMENDED, Mist (Desktop), Parity (Desktop), imToken (iPhone), imToken (Android), Trust (iPhone), Trust (Android), Cipher (iPhone), Cipher (Android)
         </div>
       </div>
       <button class="close-button" aria-label="Close" type="button" data-close><span aria-hidden="true">×</span></button>
     </div>
-    <script src="./js/app.min.js?ckcachebust=e19dd240823ea0415c20da74751a1419"></script>
+    <div class="reveal small reveal_status" id="success" data-reveal data-close-on-click="false" data-v-offset="0" data-animation-in="fade-in" data-animation-out="fade-out">
+      <div class="reveal_inner">
+        <div class="reveal_content">
+          <h2 class="reveal_header">Success!</h2>
+          <p class="reveal_descr">Please check your inbox to confirm the registration. <br>Once we get first 10 000 users we will make the first airdrop. <br>Please spread the word about us with your friends:<br></p><code>tokenboom.io</code>
+          <ul class="menu reveal_share">
+            <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+            <li><a href="#"><i class="fab fa-telegram"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+          </ul>
+          <p class="reveal_descr">And subscribe to our updates in social networks:
+            <ul class="menu vertical reveal_social">
+              <li><a class="reveal_social_link" href="#" target="blank"><i class="fab fa-telegram-plane"></i><code>@telegram</code></a></li>
+              <li><a class="reveal_social_link" href="#" target="blank"><i class="fab fa-facebook-f"></i><code>https://facebook.com</code></a></li>
+              <li><a class="reveal_social_link" href="#" target="blank"><i class="fab fa-twitter"></i><code>https://twitter.com  </code></a></li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <button class="close-button" aria-label="Close" type="button" data-close><span aria-hidden="true">×</span></button>
+    </div>
+    <script src="./js/app.min.js?ckcachebust=d8ae0a2f71025f5161fb80d34f86c473"></script>
   </body>
 </html>

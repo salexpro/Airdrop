@@ -1,3 +1,42 @@
+@font-face {
+    font-family: 'Soleil';
+    src: url('../fonts/Soleil/Soleil.woff2') format('woff2'),
+         url('../fonts/Soleil/Soleil.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Museo';
+    src: url('../fonts/Museo/MuseoCyrl-700.woff2') format('woff2'), 
+         url('../fonts/Museo/MuseoCyrl-700.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Museo Sans';
+    src: url('../fonts/MuseoSans/MuseoSans-500.woff2') format('woff2'), url('../fonts/MuseoSans/MuseoSans-500.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Museo Sans';
+    src: url('../fonts/MuseoSans/MuseoSans-300.woff2') format('woff2'), url('../fonts/MuseoSans/MuseoSans-300.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Museo Sans';
+    src: url('../fonts/MuseoSans/MuseoSans-700.woff2') format('woff2'), url('../fonts/MuseoSans/MuseoSans-700.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+
 ::-webkit-scrollbar {
     width: 5px;
     height: 5px;
@@ -10,12 +49,12 @@
 
 html, body{
     -webkit-overflow-scrolling: touch;
-    letter-spacing: 0.9px;
 }
 
 .wrap {
     overflow: hidden;
     min-width: 320px;
+    background-image: linear-gradient(to left, #671ac1 0%, #310e89 100%);
 }
 
 [type='text'],
@@ -42,13 +81,6 @@ a{
 }
 
 h1{
-    letter-spacing: 3px;
-    line-height: 1.5;
-    @include breakpoint(small down) {
-        letter-spacing: 1.7px;
-    }
-}
-
-h2{
-    letter-spacing: 3px;
+    line-height: 1.2;
+    margin-bottom: .6em;
 }

@@ -1,46 +1,45 @@
 .promo{
-    background-image: url(../img/promo.jpg), 
-                      linear-gradient(to bottom, #03104f 0%, #041050 21%, #061453 85%, #03104f 106%);
+    background-image: url(../img/promo.png), 
+                      linear-gradient(-30deg, #6915c2 0%, #390393 47%, #071152 100%);
     background-position: top right;
     background-repeat: no-repeat;
     background-size: contain;
     color: $white;
     margin-bottom: 56px;
     padding: 0 30px;
-    @include breakpoint(xlarge down){
-        background-size: cover;
-        background-position: top center;
-    }
     @include breakpoint(large down) {
         margin-bottom: 50px;
     }
     @include breakpoint(medium down) {
         margin-bottom: 80px;
-        background-size: auto;
-        background-position: bottom center;
-        background-image: url(../img/promo.jpg), 
-                          linear-gradient(to right, #03104f 0%, #041050 21%, #061453 85%, #03104f 106%);
     }
     @include breakpoint(small down) {
         margin: 0;
-    }
-    @media screen and #{breakpoint(small down)} and (orientation: portrait) {
-        background-size: 230%;
-        background-position: top -40px right 19%;
+        br {
+            display: none;
+        }
     }
     &_inner{
         position: relative;
         height: 100vh;
+        min-height: 480px;
         padding-bottom: 5%;
         @include breakpoint(medium down) {
-            padding-top: 70px;
+            padding-top: 80px;
         }
         @include breakpoint(small down) {
-            align-items: flex-end;
+            // align-items: flex-end;
         }
         @media screen and #{breakpoint(small down)} and (orientation: portrait){
-            padding: 40% 0 0;
+            padding: 0;
             align-items: center;
+        }
+    }
+    &_descr{
+        font-size: 17px;
+        color: rgba(#ded1ff, 0.74);
+        @include breakpoint(small down) {
+            font-size: 14px;
         }
     }
 }
@@ -50,9 +49,10 @@
     height: 45px;
     border-radius: 50%;
     background-color: rgba($primary-color, .2);
-    background-image: url(../img/scroll.png);
+    background-image: url(../img/scroll.svg);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 12px auto;
     position: absolute;
     left: 15px;
     bottom: 54px;
@@ -80,7 +80,7 @@
         position: absolute;
         transform: rotate(-90deg);
         opacity: 0.2;
-        left: 6px;
+        left: 3px;
         bottom: calc(100% + 24px);
         @include breakpoint(small down) {
             display: none;

@@ -1,10 +1,10 @@
 mixin menu(mod)
     ul.menu(data-smooth-scroll class=mod)
-        li
+        li(class=mod==='simple' ? "active" : "")
             a(href="#promo") Start
         li
             a(href="#how") How It Works
         li
-            a(href="#customers") Partner
+            a(href="#customers") Airdrops
         li
             a(href="#media") News

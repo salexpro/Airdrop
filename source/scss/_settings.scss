@@ -65,11 +65,11 @@
 // 1. Global
 // ---------
 
-$global-font-size: 12px;
+$global-font-size: 14px;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.3;
 $foundation-palette: (
-  primary: #5c24e3,
+  primary: #961ce4,
   secondary: #1a066f,
   success: #3adb76,
   warning: #ffae00,
@@ -80,9 +80,9 @@ $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
 $black: #000;
 $white: #fff;
-$body-background: #03104f;
+$body-background: #6915c2;
 $body-font-color: #0a0d58;
-$body-font-family: 'Roboto', Arial, sans-serif;
+$body-font-family: 'Soleil', Arial, sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
@@ -129,27 +129,27 @@ $block-grid-max: 8;
 // 4. Base Typography
 // ------------------
 
-$header-font-family: $body-font-family;
-$header-font-weight: 500;
+$header-font-family: 'Museo', sans-serif;
+$header-font-weight: 700;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
 $header-color: inherit;
 $header-lineheight: 1;
-$header-margin-bottom: 2.09rem;
+$header-margin-bottom: 2.09em;
 $header-styles: (
   small: (
-    'h1': ('font-size': 20),
-    'h2': ('font-size': 20),
-    'h3': ('font-size': 16),
+    'h1': ('font-size': 25),
+    'h2': ('font-size': 22),
+    'h3': ('font-size': 18),
     'h4': ('font-size': 14),
     'h5': ('font-size': 12),
     'h6': ('font-size': 12),
   ),
   medium: (
-    'h1': ('font-size': 30),
+    'h1': ('font-size': 46),
     'h2': ('font-size': 30),
-    'h3': ('font-size': 16),
-    'h4': ('font-size': 14),
+    'h3': ('font-size': 18),
+    'h4': ('font-size': 16),
     'h5': ('font-size': 14),
     'h6': ('font-size': 12),
   ),
@@ -157,7 +157,7 @@ $header-styles: (
 $header-text-rendering: optimizeLegibility;
 $small-font-size: 80%;
 $header-small-font-color: $medium-gray;
-$paragraph-lineheight: 2;
+$paragraph-lineheight: 1.55;
 $paragraph-margin-bottom: 1rem;
 $paragraph-text-rendering: optimizeLegibility;
 $code-color: $black;
@@ -277,11 +277,11 @@ $breadcrumbs-item-separator-color: $medium-gray;
 // 11. Button
 // ----------
 
-$button-font-family: inherit;
-$button-padding: 1.09em 3em;
+$button-font-family: 'Museo', sans-serif;
+$button-padding: 0.8em 2.6em;
 $button-margin: 0;
 $button-fill: solid;
-$button-background: rgba($primary-color, .4);
+$button-background: rgba($primary-color, .9);
 $button-background-hover: $primary-color;
 $button-color: $white;
 $button-color-alt: $black;
@@ -427,23 +427,23 @@ $select-background: $white;
 $select-triangle-color: $dark-gray;
 $select-radius: $global-radius;
 $input-color: $white;
-$input-placeholder-color: $medium-gray;
+$input-placeholder-color: #b9bdd6;
 $input-font-family: inherit;
-$input-font-size: rem-calc(12);
+$input-font-size: rem-calc(15);
 $input-font-weight: $global-weight-normal;
 $input-line-height: $global-lineheight;
-$input-background: transparent;
-$input-background-focus: transparent;
+$input-background: rgba($white, .05);
+$input-background-focus: rgba($white, .07);
 $input-background-disabled: $light-gray;
-$input-border: 2px solid rgba($primary-color, .4);
-$input-border-focus: 2px solid $primary-color;
-$input-padding: 1.06rem 30px;
-$input-shadow: none;
+$input-border: 1px solid rgba(#4a22be, .52);
+$input-border-focus: 1px solid #4a22be;
+$input-padding: 1.13rem 30px 1.05rem;
+$input-shadow: 0 18px 54px rgba(0, 0, 0, 0.12);
 $input-shadow-focus: none;
 $input-cursor-disabled: not-allowed;
-$input-transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
+$input-transition: box-shadow 0.5s, background 0.5s, border-color 0.25s ease-in-out;
 $input-number-spinners: true;
-$input-radius: $global-radius;
+$input-radius: 25px;
 $form-button-radius: $global-radius;
 
 // 21. Label
@@ -472,9 +472,9 @@ $menu-nested-margin: $global-menu-nested-margin;
 $menu-items-padding: $global-menu-padding;
 $menu-simple-margin: 40px;
 $menu-item-color-active: $white;
-$menu-item-background-active: get-color(primary);
+$menu-item-background-active: none;
 $menu-icon-spacing: 0.25rem;
-$menu-item-background-hover: $light-gray;
+$menu-item-background-hover: none;
 $menu-state-back-compat: true;
 $menu-centered-back-compat: true;
 
@@ -730,7 +730,7 @@ $reveal-padding: 0;
 $reveal-border: 0;
 $reveal-radius: 0;
 $reveal-zindex: 1005;
-$reveal-overlay-background: rgba(#020d42, 0.9);
+$reveal-overlay-background: rgba($secondary-color, 0.9);
 
 // 48. Slider
 // ----------

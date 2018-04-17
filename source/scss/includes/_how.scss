@@ -16,6 +16,13 @@
             padding: 60px 20px 45px;
         }
     }
+    &_descr{
+        @include breakpoint(small down) {
+            br {
+                display: none;
+            }
+        }
+    }
     &_steps{
         margin-top: 72px;
         counter-reset: steps;
@@ -42,12 +49,14 @@
         }
         &_descr{
             padding: 0 10%;
+            a{
+                color: $primary-color;
+            }
             &::before{
                 content: '0' counter(steps);
                 display: block;
                 font-size: 16px;
                 font-weight: 500;
-                letter-spacing: 1.2px;
                 line-height: 1;
                 margin-top: 50px;
                 margin-bottom: 30px;

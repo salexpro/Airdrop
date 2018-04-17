@@ -11,6 +11,13 @@
             margin-bottom: 50px;
         }
     }
+    &_descr {
+        @include breakpoint(small down) {
+            br {
+                display: none;
+            }
+        }
+    }
     &_items{
         @include breakpoint(medium down) {
             max-width: 70%;

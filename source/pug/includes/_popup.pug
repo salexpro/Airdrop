@@ -1,23 +1,77 @@
-#join.reveal.small.reveal_join(data-reveal data-v-offset="0" data-animation-in="fade-in" data-animation-out="fade-out")
+#step1.reveal.small.reveal_join(data-reveal data-close-on-click="false" data-v-offset="0" data-animation-in="fade-in" data-animation-out="fade-out")
     .reveal_inner
         .reveal_content
             ul.reveal_join_steps
                 li.reveal_join_step.is_active
                 li.reveal_join_step
             h2.reveal_header
-                | Thank you for
-                br
-                | your email
+                | Registration
             p.reveal_descr
-                | To finish your registrations and get tokens,
+                | Leave your email to get tokens
+            +form
+    button.close-button(aria-label='Close', type='button', data-close)
+        span(aria-hidden='true') ×
+
+#step2.reveal.small.reveal_join(data-reveal data-close-on-click="false" data-v-offset="0" data-animation-in="fade-in" data-animation-out="fade-out")
+    .reveal_inner
+        .reveal_content
+            ul.reveal_join_steps
+                li.reveal_join_step
+                li.reveal_join_step.is_active
+            h2.reveal_header
+                | Finish your
                 br
-                | Save your token-compatible Ethereum address
+                | registration
+            p.reveal_descr
+                | Save your token-compatible Ethereum
                 br
-                | for future airdrops.
+                | address for future airdrops.
             +form('join')
         .reveal_footer
             .reveal_note
                 | *ERC20 compatible wallets
-            | Myetherwallet, Metamask, Mist, Parity
+            | MyEtherWallet (Desktop OR Mobile) RECOMMENDED, MetaMask (Firefox/Chrome Extension) RECOMMENDED, Mist (Desktop), Parity (Desktop), imToken (iPhone), imToken (Android), Trust (iPhone), Trust (Android), Cipher (iPhone), Cipher (Android)
+
+    button.close-button(aria-label='Close', type='button', data-close)
+        span(aria-hidden='true') ×
+
+#success.reveal.small.reveal_status(data-reveal data-close-on-click="false" data-v-offset="0" data-animation-in="fade-in" data-animation-out="fade-out")
+    .reveal_inner
+        .reveal_content
+            h2.reveal_header
+                | Success!
+            p.reveal_descr
+                | Please check your inbox to confirm the registration. 
+                br
+                | Once we get first 10 000 users we will make the first airdrop. 
+                br
+                | Please spread the word about us with your friends:
+                br
+            code tokenboom.io
+            ul.menu.reveal_share
+                li
+                    a(href="#")
+                        i.fab.fa-facebook-square
+                li
+                    a(href="#")
+                        i.fab.fa-telegram
+                li
+                    a(href="#")
+                        i.fab.fa-twitter-square
+            p.reveal_descr
+                | And subscribe to our updates in social networks:
+                ul.menu.vertical.reveal_social
+                    li
+                        a.reveal_social_link(href="#" target="blank")
+                            i.fab.fa-telegram-plane
+                            code @telegram
+                    li
+                        a.reveal_social_link(href="#" target="blank")
+                            i.fab.fa-facebook-f
+                            code https://facebook.com
+                    li
+                        a.reveal_social_link(href="#" target="blank")
+                            i.fab.fa-twitter
+                            code https://twitter.com  
     button.close-button(aria-label='Close', type='button', data-close)
         span(aria-hidden='true') ×

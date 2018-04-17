@@ -1,36 +1,75 @@
 .form{
-    max-width: 400px;
-    display: flex;
+    max-width: 500px;
+    position: relative;
     @include breakpoint(small down) {
-        flex-direction: column;
+        max-width: 100%;
+    }
+    &.bounce{
+        animation-name: bounce;
+        transform-origin: center bottom;
+        animation-duration: 1s;
+        animation-fill-mode: both;
     }
     &--head{
-        margin-top: 55px;
+        margin-top: 50px;
         @include breakpoint(small down) {
             margin: 0;
         }
     }
     &--join{
-        margin-top: 50px;
+        max-width: 410px;
         @include breakpoint(small down) {
-            margin-top: 40px;
+            max-width: 100%;
         }
         input{
-            border-color: $primary-color;
-            color: $primary-color;
-            &::placeholder{
-                color: $primary-color;
+            font-family: $font-family-monospace;
+            font-family: "Lucida Console", Monaco, monospace;
+            font-size: 10px;
+            padding-left: 20px;
+            @include breakpoint(small down) {
+                font-size: 12px;
+                text-align: center;
             }
         }
-        .button{
-            background-color: $primary-color;
+    }
+    input{
+        padding-right: 130px;
+        @include breakpoint(small down) {
+            height: auto;
+            padding: 12px 20px 8px;
         }
     }
     .button{
-        margin-left: 30px;
+        position: absolute;
+        top: 4px;
+        right: 4px;
         @include breakpoint(small down) {
-            margin: 20px 0 0;
-            background-color: $primary-color;
+            position: static;
+            margin: 5px 0 0;
+            width: 100%;
         }
+    }
+}
+
+@keyframes bounce {
+    from,
+    20%,
+    53%,
+    80%,
+    to {
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        transform: translate3d(0, 0, 0);
+    }
+    40%,
+    43% {
+        animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+        transform: translate3d(0, -10px, 0);
+    }
+    70% {
+        animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+        transform: translate3d(0, -5px, 0);
+    }
+    90% {
+        transform: translate3d(0, -2px, 0);
     }
 }
