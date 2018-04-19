@@ -1,5 +1,6 @@
 .how{
     padding: 0 30px;
+    margin-bottom: 40px;
     @include breakpoint(small down) {
         padding: 0;
     }

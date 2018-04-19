@@ -1,45 +1,24 @@
+mixin item(img, link, title, date, brief, source)
+    .column.large-4.medium-6.small-12.media_item
+        .media_item_img
+            a(href=link target="blank")
+                img(src="./img/media/" + img + ".jpg", alt="")
+        .media_item_date
+            =date
+        h3.media_item_title
+            a(href=link target="blank")
+                =title
+        p.media_item_brief
+            =brief
+        .media_item_source
+            =source
+
 section#media.media
     .row.column.media_inner
         h2 What Media Say
         //- p.media_descr
     .row.media_items
-        .column.large-3.medium-6.small-12.media_item
-            .media_item_img
-                a(href="#")
-                    img(src="./img/media/1.jpg", alt="")
-            .media_item_date 01.12.2017
-            h3.media_item_title
-                a(href="#") Not Another Augmented Reality How-To
-            p.media_item_brief
-                | Stripe is the best software platform for running an internet business. We handle billions of dollars every year for forward
-            a.media_item_source(href="#") Medium
-        .column.large-3.medium-6.small-12.media_item
-            .media_item_img
-                a(href="#")
-                    img(src="./img/media/2.jpg", alt="")
-            .media_item_date 01.12.2017
-            h3.media_item_title
-                a(href="#") Not Another Augmented Reality How-To
-            p.media_item_brief
-                | Stripe is the best software platform for running an internet business. We handle billions of dollars every year for forward
-            a.media_item_source(href="#") Medium
-        .column.large-3.medium-6.small-12.media_item
-            .media_item_img
-                a(href="#")
-                    img(src="./img/media/3.jpg", alt="")
-            .media_item_date 01.12.2017
-            h3.media_item_title
-                a(href="#") Not Another Augmented Reality How-To
-            p.media_item_brief
-                | Stripe is the best software platform for running an internet business. We handle billions of dollars every year for forward
-            a.media_item_source(href="#") Medium
-        .column.large-3.medium-6.small-12.media_item
-            .media_item_img
-                a(href="#")
-                    img(src="./img/media/4.jpg", alt="")
-            .media_item_date 01.12.2017
-            h3.media_item_title
-                a(href="#") Not Another Augmented Reality How-To
-            p.media_item_brief
-                | Stripe is the best software platform for running an internet business. We handle billions of dollars every year for forward
-            a.media_item_source(href="#") Medium
+        +item(1, 'https://medium.com/@hello_23356/when-do-i-get-tokens-cc121f26b570', 'When do I get tokens?', '19.04.2018', '', 'Medium')
+        +item(2, 'https://medium.com/@hello_23356/known-erc-20-compatible-wallets-1eaf40dc9bf3', 'Known ERC-20 Compatible Wallets', '19.04.2018', '', 'Medium')
+        +item(3, 'https://medium.com/@hello_23356/what-is-airdrop-bf01736a35ae', 'What is AirDrop?', '19.04.2018', '', 'Medium')
+        

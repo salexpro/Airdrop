@@ -40,38 +40,57 @@
         .reveal_content
             h2.reveal_header
                 | Success!
-            p.reveal_descr
+                br
                 | Please check your inbox to confirm the registration. 
-                br
+            p.reveal_descr
                 | Once we get first 10 000 users we will make the first airdrop. 
-                br
+            h2.reveal_header
                 | Please spread the word about us with your friends:
-                br
-            code tokenboom.io
+            | Click to share
             ul.menu.reveal_share
                 li
-                    a(href="#")
+                    a(href="https://www.facebook.com/sharer/sharer.php?u=tokenboom.io" target="_blank")
                         i.fab.fa-facebook-square
                 li
-                    a(href="#")
+                    a(href="https://telegram.me/share/url?url=tokenboom.io&text=Hey,%20visit%20Tokenboom.io%20to%20get%20Airdrops%20from%20TOP%20ICO%20projects." target="_blank")
                         i.fab.fa-telegram
                 li
-                    a(href="#")
+                    a(href="https://twitter.com/intent/tweet?url=https://tokenboom.io&text=Hey,%20visit%20Tokenboom.io%20to%20get%20Airdrops%20from%20TOP%20ICO%20projects." target="_blank")
                         i.fab.fa-twitter-square
-            p.reveal_descr
+            //- p.reveal_descr
                 | And subscribe to our updates in social networks:
                 ul.menu.vertical.reveal_social
                     li
-                        a.reveal_social_link(href="#" target="blank")
+                        a.reveal_social_link(href="https://t.me/tokenboom_io" target="blank")
                             i.fab.fa-telegram-plane
-                            code @telegram
+                            code @tokenboom_io
                     li
-                        a.reveal_social_link(href="#" target="blank")
+                        a.reveal_social_link(href="https://www.facebook.com/TokenBoom/" target="blank")
                             i.fab.fa-facebook-f
-                            code https://facebook.com
+                            code https://www.facebook.com/TokenBoom/
                     li
-                        a.reveal_social_link(href="#" target="blank")
+                        a.reveal_social_link(href="https://twitter.com/Tokenboom_io" target="blank")
                             i.fab.fa-twitter
-                            code https://twitter.com  
+                            code https://twitter.com/Tokenboom_io
+    button.close-button(aria-label='Close', type='button', data-close)
+        span(aria-hidden='true') ×
+
+
+#error.reveal.small.reveal_status(data-reveal data-close-on-click="false" data-v-offset="0" data-animation-in="fade-in" data-animation-out="fade-out")
+    .reveal_inner
+        .reveal_content
+            h2.reveal_header Error
+            p.reveal_descr
+    button.close-button(aria-label='Close', type='button', data-close)
+        span(aria-hidden='true') ×
+
+
+#confirmed.reveal.small.reveal_status(data-reveal data-close-on-click="false" data-deep-link="true" data-v-offset="0" data-animation-in="fade-in" data-animation-out="fade-out")
+    .reveal_inner
+        .reveal_content
+            h2.reveal_header
+                | Email is confirmed
+            p.reveal_descr
+                | Thank you
     button.close-button(aria-label='Close', type='button', data-close)
         span(aria-hidden='true') ×

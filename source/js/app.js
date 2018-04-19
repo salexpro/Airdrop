@@ -12,17 +12,51 @@
 */
 
 $(document).foundation();
-let user_email;
-user_email = $('[type="email"]', this).val();
+const api = 'https://316c5712.ngrok.io/users';
+let data = {
+    email: '',
+    address: ''
+};
 $('form[action]').submit(function(e) {
     e.preventDefault();
     const action = $(this).attr('action');
     switch (action) {
         case 'join':
+            data.email = $('[type="email"]', this).val();
             $('#step2').foundation('open');
             break;
         case 'send':
-            $('#success').foundation('open');
+            $('button', this).prop('disabled', true);
+            $('#error .reveal_descr').text('');
+            data.address = $('[type="text"]', this).val();
+            $.ajax({
+                type: 'POST',
+                url: api,
+                contentType: 'application/json',
+                dataType: 'json',
+                data: JSON.stringify(data),
+                success: () => {
+                    $('#success').foundation('open');
+                },
+                error: (xhr, textStatus) => {       
+                    if(xhr.status === 400){
+                        const errs = xhr.responseJSON.errors.reduce((acc, el) => [...acc, ...Object.values(el)], []);
+                        
+                        errs.forEach(txt => {
+                            $('#error .reveal_descr').append('<br>' + txt);
+                        });
+                        
+                        $('#error').foundation('open');
+                    } else {
+                        console.log(xhr);
+                        alert('Error: ' + textStatus);
+                    }
+                },
+                complete: () => {
+                    $('button', this).prop('disabled', false);
+                }
+            })
+            
             break;
         default:
             break;

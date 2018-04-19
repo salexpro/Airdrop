@@ -38,12 +38,6 @@
 		"oAP": "\/build\/.gitignore",
 		"oF": 1
 		},
-	"\/build": {
-		"ft": 65536,
-		"oA": 1,
-		"oAP": "\/build\/build",
-		"oF": 0
-		},
 	"\/build.zip": {
 		"cB": 0,
 		"ft": 8192,
@@ -1668,6 +1662,75 @@
 		"oO": 0,
 		"oS": 0
 		},
+	"\/source\/android-chrome-192x192.png": {
+		"ft": 32768,
+		"iS": 10672,
+		"oA": 0,
+		"oAP": "\/build\/android-chrome-192x192.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/android-chrome-384x384.png": {
+		"ft": 32768,
+		"iS": 29421,
+		"oA": 0,
+		"oAP": "\/build\/android-chrome-384x384.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/apple-touch-icon.png": {
+		"ft": 32768,
+		"iS": 7604,
+		"oA": 0,
+		"oAP": "\/build\/apple-touch-icon.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/browserconfig.xml": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/browserconfig.xml",
+		"oF": 0
+		},
+	"\/source\/favicon-16x16.png": {
+		"ft": 32768,
+		"iS": 1288,
+		"oA": 0,
+		"oAP": "\/build\/favicon-16x16.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/favicon-32x32.png": {
+		"ft": 32768,
+		"iS": 1971,
+		"oA": 0,
+		"oAP": "\/build\/favicon-32x32.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/favicon.ico": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/favicon.ico",
+		"oF": 0
+		},
 	"\/source\/fonts\/Museo\/MuseoCyrl-700.woff": {
 		"cB": 0,
 		"ft": 8192,
@@ -1876,17 +1939,6 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/source\/img\/social\/in.png": {
-		"ft": 32768,
-		"iS": 464,
-		"oA": 0,
-		"oAP": "\/build\/img\/social\/in.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
 	"\/source\/img\/social\/md.png": {
 		"ft": 32768,
 		"iS": 528,
@@ -1918,6 +1970,17 @@
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
+		},
+	"\/source\/mstile-150x150.png": {
+		"ft": 32768,
+		"iS": 6961,
+		"oA": 0,
+		"oAP": "\/build\/mstile-150x150.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
 		},
 	"\/source\/pug\/includes\/_customers.pug": {
 		"cB": 1,
@@ -2035,6 +2098,16 @@
 		"oAP": "\/build\/layout.html",
 		"oF": 1,
 		"oS": 1
+		},
+	"\/source\/safari-pinned-tab.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "\/build\/safari-pinned-tab.svg",
+		"oF": 0,
+		"opt": 1,
+		"plM": 1103269715935,
+		"prP": 0
 		},
 	"\/source\/scss\/_settings.scss": {
 		"aP": 1,
@@ -2191,6 +2264,13 @@
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
+		},
+	"\/source\/site.webmanifest": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/site.webmanifest",
+		"oF": 0
 		}
 	},
 "hooks": [
@@ -2201,9 +2281,9 @@
 	"creationDate": 505831586,
 	"displayValue": "Airdrop",
 	"displayValueWasSetByUser": 1,
-	"iconImageName": "meme-doge",
+	"iconImageName": "\/source\/apple-touch-icon.png",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 545697657
+	"lastBuiltDate": 545862026
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
